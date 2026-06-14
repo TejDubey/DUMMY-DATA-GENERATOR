@@ -1,0 +1,15 @@
+Generate a dummy data in the below format in a collection called employee in a db called company
+
+Format: 
+
+{
+    name: "tej",
+    salary: 4500000,
+    language: "c++",
+    city: "india",
+    isManager: true
+}
+
+Generate 10 such records when a button called generate data is clicked!
+Create and express app with mongoose to achieve this
+Everytime the button is clicked, it should clear the collection
