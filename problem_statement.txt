@@ -1,6 +1,6 @@
-Generate a dummy data in the below format in a collection called employee in a db called company
+Generate dummy employee data in the following format and store it in a MongoDB collection called employee.
 
-Format: 
+Format:
 
 {
     name: "tej",
@@ -10,6 +10,21 @@ Format:
     isManager: true
 }
 
-Generate 10 such records when a button called generate data is clicked!
-Create and express app with mongoose to achieve this
-Everytime the button is clicked, it should clear the collection
+Requirements:
+
+1. Create an Express.js application using MongoDB and Mongoose.
+2. Allow the user to specify the number of records to generate.
+3. Generate random employee data based on the format above.
+4. Store the generated records in MongoDB.
+5. Clear all existing records before generating new data.
+6. Display a success message after generation.
+7. Provide an endpoint to view all stored employee records in JSON format.
+8. Validate user input and allow a maximum of 5000 records per request.
+
+Endpoints:
+
+GET /ddg?n=<number>
+→ Generates and stores the specified number of employee records.
+
+GET /employees
+→ Returns all currently stored employee records in JSON format.
